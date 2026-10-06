@@ -1,0 +1,6 @@
+/example
+/target
+**/target
+.DS_Store
+*.orig
+*.rej

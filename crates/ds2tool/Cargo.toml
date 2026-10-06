@@ -1,0 +1,17 @@
+[package]
+name = "ds2tool"
+version = "0.1.0"
+edition = "2021"
+description = "CLI: decode/inspect DSS/DS2 files (Grundig Digta u.a.)"
+license = "Unlicense"
+
+[[bin]]
+name = "ds2tool"
+path = "src/main.rs"
+
+[dependencies]
+grundig-ds2 = { path = "../grundig" }
+dss-codec = { package = "dss-codec", path = "../upstream" }
+clap = { version = "4", features = ["derive"] }
+hound = "3"
+anyhow = "1"

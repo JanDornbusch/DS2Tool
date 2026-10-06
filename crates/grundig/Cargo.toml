@@ -1,0 +1,14 @@
+[package]
+name = "grundig-ds2"
+version = "0.1.0"
+edition = "2021"
+description = "Grundig/Olympus DSS/DS2 container layer: detect, normalize, decode"
+license = "Unlicense"
+
+[lib]
+name = "grundig_ds2"
+path = "src/lib.rs"
+
+[dependencies]
+dss-codec = { package = "dss-codec", path = "../upstream" }
+thiserror = "2"
